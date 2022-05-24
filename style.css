@@ -30,7 +30,7 @@ html{
     width: 100%;
     height: 100vh;
     margin: auto;
-    animation: fadeIn 6s ease-in-out;
+    animation: fadeIn 2.5s ease-in-out;
 }
 
 .navbar {
@@ -59,7 +59,6 @@ html{
 
 .navbar a:hover {
     color: rgb(255, 255, 255);
-    text-shadow: #ffffff 0px 2px 10px;
     font-weight: bold;
 }
 
@@ -96,9 +95,14 @@ html{
 
 
 .solid{
-    background-color: #000;
-    box-shadow: 3px 2px 10px #000;
-    /* animation: fadeIn .5s ease-in-out; */
+    background-color: rgba(0, 0, 0, 0.925);
+    border-bottom: #fff solid 2px;
+    /* box-shadow: 3px 2px 10px #000; */
+    animation: BackgroundfadeIn .3s ease-in;
+}
+
+.unsolid{
+    animation: BackgroundfadeOut .3s ease-out;
 }
 
 .nosotros-container{
@@ -167,6 +171,25 @@ html{
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes BackgroundfadeIn {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: #000;
+    }
+}
+
+
+@keyframes BackgroundfadeOut {
+    from {
+        background-color: #000;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
     }
 }
 

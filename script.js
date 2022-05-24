@@ -7,9 +7,13 @@ function observer(targetId, classAdd) {
     
     entradas.forEach((entrada) => {
         if(entrada.isIntersecting){
-            navbarBack.classList.toggle(classAdd);
+            navbarBack.classList.add(classAdd);
+            navbarBack.classList.remove("unsolid");
         }
         else{
+            if(document.querySelector(".navbar").classList.contains(classAdd)){
+                navbarBack.classList.add("unsolid");
+            }
             navbarBack.classList.remove(classAdd);
         }
         
