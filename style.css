@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     margin: auto;
-    color: #030201;
+    animation: fadeIn 6s ease-in-out;
 }
 
 .navbar-container{
@@ -49,4 +49,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
