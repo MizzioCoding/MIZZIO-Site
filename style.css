@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -13,7 +13,7 @@ html{
 }
 
 
-.inicio-container video{
+.inicio-container video {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -25,7 +25,7 @@ html{
     z-index: -1;
 }
 
-.inicio-container img{
+.inicio-container img {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -34,7 +34,7 @@ html{
 }
 
 .navbar {
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -62,6 +62,10 @@ html{
     font-weight: bold;
 }
 
+.nav-items {
+    padding-top: 20px;
+}
+
 
 .image-nav {
     display: flex;
@@ -72,7 +76,7 @@ html{
 .logonav {
     width: 150px;
     position: absolute;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 .toggle-button {
@@ -94,81 +98,94 @@ html{
 }
 
 
-.solid{
+.solid {
     background-color: rgba(0, 0, 0, 0.925);
     border-bottom: #fff solid 2px;
     /* box-shadow: 3px 2px 10px #000; */
     animation: BackgroundfadeIn .3s ease-in;
 }
 
-.unsolid{
+.unsolid {
     animation: BackgroundfadeOut .3s ease-out;
 }
 
-.nosotros-container{
+.nosotros-container {
     background-color: #000;
     width: 100%;
     height: 40vh;
     z-index: 15;
 }
 
-.packs-container{
-    background-image: url("img/escalera.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 15;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-}
-
-.creatupagina{
+.creatupagina {
     background-color: #000;
     width: 600px;
     height: 550px;
-    margin-top: 5px;
-    margin-right: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
-.creatupagina:hover{
+.creatupagina:hover {
     box-shadow: 3px 2px 10px #000;
 }
 
-.creatupagina h1{
+.creatupagina h1 {
     color: #fff;
     font-size: 80px;
-    margin-top: 50px;
-    margin-left: 20px;
+    padding-left: 20px;
     font-family: 'Fira Sans', sans-serif;
 }
 
-.creatupagina a{
+.creatupagina a {
     color: rgb(255, 255, 255);
     font-size: 80px;
 }
 
-.creatupagina a:hover{
+.creatupagina a:hover {
     color: rgb(255, 255, 255);
     text-shadow: #8f8f8f 0px 2px 10px;
 }
 
 
-.nosotros-text{
+.nosotros-text {
     color: #fff;
     font-size: 30px;
     font-family: 'Fira Sans', sans-serif;
-    margin-top: 50px;
-    margin-left: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
+/* SEGUNDO-MAIN */
+.componentContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.a {
+    grid-area: 1 / 1 / 3 / 6;
+    background-color: black;
+    height: auto;
+}
+
+.b {
+    grid-area: 3 / 1 / 5 / 4;
+    background-color: rgb(255, 255, 255);
+}
+
+.c {
+    grid-area: 3 / 4 / 5 / 6;
+    background-color: black;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -178,6 +195,7 @@ html{
     from {
         background-color: rgba(0, 0, 0, 0);
     }
+
     to {
         background-color: #000;
     }
@@ -188,6 +206,7 @@ html{
     from {
         background-color: #000;
     }
+
     to {
         background-color: rgba(0, 0, 0, 0);
     }
@@ -232,7 +251,7 @@ html{
 
     }
 
-    .navbarHeight{
+    .navbarHeight {
         animation: navAnimation .2s ease 0s 1 normal forwards;
     }
 }

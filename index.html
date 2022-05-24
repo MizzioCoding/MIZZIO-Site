@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/M.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/M.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <title>MIZZIO</title>
 </head>
 
@@ -27,9 +27,9 @@
             </div>
         </nav> -->
         <nav class="navbar">
-            <div style="display:flex; justify-content:space-between;">
+            <div>
                 <div class="logo-container">
-                    <img class="logonav" src="img/MIZZIOcoding_transparenteBlanco.png" alt="Mizzio coding">
+                    <img class="logonav" src="img/MIZZIOcoding_transparenteBlanco.png" alt="Mizzio coding" />
                 </div>
 
                 <a class="toggle-button">
@@ -38,7 +38,7 @@
                     <span class="bar"></span>
                 </a>
                 <div class="navbar-links">
-                    <ul>
+                    <ul class="nav-items">
                         <li><a href="#inicio">INICIO</a></li>
                         <li><a href="#nosotros">NOSOTROS</a></li>
                         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -52,31 +52,41 @@
 
     <section id="inicio">
         <div class="inicio-container">
-            <img src="img/MIZZIO_transparenteNegro.svg" alt="MIZZIO">
+            <img src="img/MIZZIO_transparenteNegro.svg" alt="MIZZIO" />
             <video src="img/backvideo.mp4" muted autoplay loop></video>
         </div>
     </section>
-
     <section id="nosotros">
-        <div class="nosotros-container">
-            <div class="nosotros-text">
-                <h1>NOSOTROS</h1>
-                <p> Somos empresa de desarrollo web que construye sitios modernos <br>
-                    para ayudar a las empresasa crecer. <br>
-                    Nuestra visión es crear un futuro mejor para las pequeñas y medianas empresas <br>
-                    mediante el desarrollo de sitios web visualmente impresionantes y fáciles de usar a precios asequibles.</p>
+        <div class="componentContainer">
+            <!-- CONTENEDOR PADRE -->
+            <div class="nosotros-container a">
+                <div class="nosotros-text">
+                    <h1>NOSOTROS</h1>
+                    <p>
+                        Somos empresa de desarrollo web que construye sitios modernos
+                        <br />
+                        para ayudar a las empresasa crecer. <br />
+                        Nuestra visión es crear un futuro mejor para las pequeñas y
+                        medianas empresas <br />
+                        mediante el desarrollo de sitios web visualmente impresionantes y
+                        fáciles de usar a precios asequibles.
+                    </p>
+                </div>
+            </div>
+            <div class="b"></div>
+            <div class="packs-container c">
+                <div class="creatupagina">
+                    <h1>
+                        CREA <br />
+                        TU <br />
+                        PÁGINA <br />
+                        WEB <br />
+                        <a href="#paquetes"> AHORA</a>
+                    </h1>
+                </div>
             </div>
         </div>
-
-        <div class="packs-container">
-            <div class="creatupagina">
-                <h1>CREA <br> TU <br> PÁGINA <br> WEB <br> <a href="#paquetes"> AHORA</a></h1>
-            </div>
-
-        </div>
-
     </section>
-
 </body>
 <script src="script.js"></script>
 
