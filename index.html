@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/MIZZIO_transparenteBlanco.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>MIZZIO</title>
@@ -12,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar-container">
+        <!-- <nav class="navbar-container">
             <div>
                 <ul>
                     <li><a href="#inicio">INICIO</a></li>
@@ -22,16 +25,59 @@
                     <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </div>
+        </nav> -->
+        <nav>
+            <div class="navbar">
+                <div class="logo-container">
+                    <img class="logonav" src="img/MIZZIOcoding_transparenteBlanco.png" alt="Mizzio coding">
+                </div>
+
+                <a class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#paquetes">PAQUETES</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <section id="inicio">
         <div class="inicio-container">
-            <img  src="img/MIZZIO_transparenteNegro.svg" alt="MIZZIO">
+            <img src="img/MIZZIO_transparenteNegro.svg" alt="MIZZIO">
             <video src="img/backvideo.mp4" muted autoplay loop></video>
         </div>
     </section>
+
+    <section id="nosotros">
+        <div class="nosotros-container">
+            <div class="nosotros-text">
+                <h1>NOSOTROS</h1>
+                <p>
+                    Mizzio es una empresa de desarrollo de software que se dedica a la creación de soluciones de
+                    software
+                    para empresas de todo tipo.
+                </p>
+                <p>
+                    Nuestra misión es crear soluciones de software que se adapten a las necesidades de cada cliente,
+                    con el objetivo de que estas sean más eficientes y eficaces.
+                </p>
+            </div>
+        </div>
+
+        <div class="packs-container"></div>
+
+    </section>
+
 </body>
 <script src="script.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </html>
