@@ -246,37 +246,43 @@ html {
 .met1 {
     background-color: #000;
     width: 70px;
-    height: 200px;
+    height: 100px;
+    animation: hUp1 2s ease-in-out infinite;
 }
 
 .met2 {
     background-color: #000;
     width: 70px;
-    height: 200px;
+    height: 150px;
+    animation: hUp2 2.2s ease-in-out infinite;
 }
 
 .met3 {
     background-color: #000;
     width: 70px;
     height: 200px;
+    animation: hUp3 2.4s ease-in-out infinite;
 }
 
 .met4 {
     background-color: #000;
     width: 70px;
-    height: 200px;
+    height: 250px;
+    animation: hUp4 2.6s ease-in-out infinite;
 }
 
 .met5 {
     background-color: #000;
     width: 70px;
-    height: 200px;
+    height: 300px;
+    animation: hUp5 2.8s ease-in-out infinite;
 }
 
 .met6 {
     background-color: #000;
     width: 70px;
-    height: 200px;
+    height: 350px;
+    animation: hUp6 3s ease-in-out infinite;
 }
 
 
@@ -421,6 +427,78 @@ html {
     }
 }
 
+
+@keyframes hUp1{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 100px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes hUp2{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 150px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes hUp3{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 200px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes hUp4{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 250px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes hUp5{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 300px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+
+@keyframes hUp6{
+    0% {
+        height: 0px;
+    }
+    50% {
+        height: 350px;
+    }
+    100% {
+        height: 0px;
+    }
+}
 
 
 @media (max-width: 800px) {
