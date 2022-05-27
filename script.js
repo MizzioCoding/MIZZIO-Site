@@ -56,14 +56,18 @@ $(document).ready(function(){
 $("#paqueteOne").click(function (e) { 
     e.preventDefault();
     $("#paquete").val("PAQUETE ONE PAGE");
+    window.location.replace("#contacto");
 });
 
 $("#paqueteAvanzado").click(function (e) { 
     e.preventDefault();
     $("#paquete").val("PAQUETE AVANZADO");
+    window.location.replace("#contacto");
 });
 
 $("#paqueteEcomerce").click(function (e) { 
     e.preventDefault();
     $("#paquete").val("PAQUETE E-COMMERCE");
+    window.location.replace("#contacto");
 });
+

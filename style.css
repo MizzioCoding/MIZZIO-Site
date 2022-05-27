@@ -352,7 +352,7 @@ html {
     position: relative;
     border-radius: 6px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     display: flex;
     color: rgb(88 199 250 / 0%);
     margin-top: 50px;
@@ -366,7 +366,8 @@ html {
 .card ul {
     list-style: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 
 .card ul li::before {
@@ -711,4 +712,14 @@ form{
         overflow-x: hidden;
     }
 
+}
+
+
+
+@media screen   
+and (min-device-width : 1000px)    
+{
+.inicio-container p{
+font-size: 1.5rem;
+}
 }
