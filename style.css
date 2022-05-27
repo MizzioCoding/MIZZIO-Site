@@ -223,7 +223,6 @@ html {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 57.3vh;
 }
 
 .comentario {

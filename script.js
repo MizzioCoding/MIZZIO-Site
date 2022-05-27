@@ -46,3 +46,9 @@ navbarLinks.addEventListener('click', () => {
 
 
 observer("nosotros", 'solid');
+
+$(document).ready(function(){
+    let heightDiv = $(".b").height();
+    $('.rect-container').height(heightDiv);
+    console.log(heightDiv);
+});
