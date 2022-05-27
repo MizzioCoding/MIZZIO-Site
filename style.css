@@ -268,16 +268,16 @@ html {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
-  }
-  
-  :root {
+}
+
+:root {
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 1.5);
-  }
-  
-  
-  
-  .card {
+}
+
+
+
+.card {
     background: #141414;
     width: var(--card-width);
     height: var(--card-height);
@@ -293,36 +293,34 @@ html {
     cursor: pointer;
     font-family: cursive;
     margin-top: 50px;
-  }
+}
 
-  .cardblack{
-      z-index: 4;
-      background-color: #000;
-      width: 65vw;
-      width: 65vh;
-  }
-  
-  .card:hover {
+.cardblack {
+    z-index: 4;
+    background-color: #000;
+    width: 65vw;
+    width: 65vh;
+}
+
+.card:hover {
     color: rgb(0, 0, 0);
     transition: color 1s;
-  }
+}
 
-  
-  .card::before {
+
+.card::before {
     content: "";
     width: 104%;
     height: 102%;
     border-radius: 8px;
-    background-image: linear-gradient(
-      var(--rotate)
-      , #ffffff, #3b3b3b 43%, #000000);
-      position: absolute;
-      top: -1%;
-      left: -2%;
-      animation: spin 2.5s linear infinite;
-  }
-  
-  .card::after {
+    background-image: linear-gradient(var(--rotate), #ffffff, #3b3b3b 43%, #000000);
+    position: absolute;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
     position: absolute;
     content: "";
     top: calc(var(--card-height) / 6);
@@ -333,23 +331,22 @@ html {
     margin: 0 auto;
     transform: scale(0.8);
     filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(
-      var(--rotate)
-      , #ffffff, #3b3b3b 43%, #000000);
-      opacity: 1;
+    background-image: linear-gradient(var(--rotate), #ffffff, #3b3b3b 43%, #000000);
+    opacity: 1;
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% {
-      --rotate: 0deg;
+        --rotate: 0deg;
     }
+
     100% {
-      --rotate: 360deg;
+        --rotate: 360deg;
     }
-  }
-  
+}
+
 
 @keyframes fadeIn {
     from {
@@ -427,7 +424,7 @@ html {
 
     .componentContainer {
         display: grid;
-        grid-template-columns: 100vw;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         height: 200vh;
         grid-column-gap: 0px;
@@ -436,6 +433,8 @@ html {
             "a"
             "b"
             "c";
+        width: 100vw;
+        overflow: hidden;
     }
 
     .a {
@@ -443,6 +442,7 @@ html {
         background-color: black;
         height: auto;
         overflow: hidden;
+        width: 100vw;
     }
 
     .b {
@@ -450,6 +450,7 @@ html {
         background-color: rgb(255, 255, 255);
         height: auto;
         overflow: hidden;
+        width: 100vw;
     }
 
     .c {
@@ -457,7 +458,11 @@ html {
         background-color: black;
         height: auto;
         overflow: hidden;
+        width: 100vw;
     }
 
+    .paquetes-container {
+        overflow-x: hidden;
+    }
 
 }
