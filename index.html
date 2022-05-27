@@ -113,47 +113,81 @@
         <div class="paquetes-container">
             <div class="cards-container">
                 <div class="card">
-                    <h1>PAQUETE ONE PAGE</h1>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
+                    <span class="cardContainer">
+                        <h1>PAQUETE ONE PAGE</h1>
+                        <ul>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                        </ul>
+                        <input type="button" value="TEST" id="paqueteOne">
+                    </span>
                 </div>
                 <div class="card">
-                    <h1>PAQUETE AVANZADO</h1>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
+                    <span class="cardContainer">
+                        <h1>PAQUETE AVANZADO</h1>
+                        <ul>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                        </ul>
+                        <input type="button" value="TEST" id="paqueteAvanzado">
+                    </span>
                 </div>
                 <div class="card">
-                    <h1>PAQUETE E-COMMERCE</h1>
-                    <ul>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                        <li>item1</li>
-                    </ul>
+                    <span class="cardContainer">
+                        <h1>PAQUETE E-COMMERCE</h1>
+                        <ul>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                            <li>item1</li>
+                        </ul>
+                        <input type="button" value="TEST" id="paqueteEcomerce">
+                    </span>
                 </div>
             </div>
         </div>
 
+    </section>
+
+    <section id="formularioContacto">
+        <div>
+            <form id="form" action="https://formsubmit.co/alassiasiro@hotmail.com" method="post">
+                <input type="hidden" name="_subject" value="SOLICITUD DE PRESUPUESTO">
+                <input type="hidden" name="_next" value="http://www.transportesiro.com.ar/#contacto">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="NOMBRE" id="nombre" placeholder="NOMBRE" />
+                <br>
+                <input type="email" name="MAIL" id="mail" placeholder="MAIL" />
+                <br>
+                <input type="text" name="EMPRESA" id="empresa" placeholder="EMPRESA (Opcional)"/>
+                <br>
+                <select name="PAQUETE" id="paquete">
+                    <option value="">Seleccione un paquete</option>
+                    <option value="PAQUETE ONE PAGE">PAQUETE ONE PAGE</option>
+                    <option value="PAQUETE AVANZADO">PAQUETE AVANZADO</option>
+                    <option value="PAQUETE E-COMMERCE">PAQUETE E-COMMERCE</option>
+                </select>
+                <br>
+                <textarea type="text" name="CONSULTA" id="consulta" placeholder="CONSULTA"></textarea>
+                <br>
+                <input type="submit" value="Enviar" id="enviar"/>
+        </div>
     </section>
 
 </body>

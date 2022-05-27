@@ -52,3 +52,18 @@ $(document).ready(function(){
     $('.rect-container').height(heightDiv);
     console.log(heightDiv);
 });
+
+$("#paqueteOne").click(function (e) { 
+    e.preventDefault();
+    $("#paquete").val("PAQUETE ONE PAGE");
+});
+
+$("#paqueteAvanzado").click(function (e) { 
+    e.preventDefault();
+    $("#paquete").val("PAQUETE AVANZADO");
+});
+
+$("#paqueteEcomerce").click(function (e) { 
+    e.preventDefault();
+    $("#paquete").val("PAQUETE E-COMMERCE");
+});

@@ -385,6 +385,16 @@ html {
     animation: spin 2.5s linear infinite;
 }
 
+.cardContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#formularioContacto{
+    background-color: black;
+}
+
 @keyframes spin {
     0% {
         --rotate: 0deg;
