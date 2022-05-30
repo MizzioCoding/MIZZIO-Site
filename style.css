@@ -521,7 +521,6 @@ input[type=button] {
     font-family: 'Fira Sans', sans-serif;
     padding: 12px 20px;
     margin: 8px 8px 8px 8px;
-    border-bottom: 2px solid #000;
     background-color: #141414;
     color: #fff;
     width: 150px;
@@ -689,7 +688,7 @@ form {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -768,6 +767,7 @@ form {
         overflow: hidden;
         width: 100vw;
     }
+
 
     .paquetes-container {
         overflow-x: hidden;
