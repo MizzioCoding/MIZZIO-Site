@@ -40,7 +40,6 @@ html {
     font-size: 2rem;
     margin: auto;
     margin-top: -40vh;
-    margin-left: 28vw;
     position: absolute;
     text-align: center;
     font-family: "Courier New";
@@ -49,6 +48,11 @@ html {
     /* animation: typing 4s steps(38) 2s 1 normal both, blink 1s steps(1) infinite;
     animation-delay: 2s; */
     animation: led 1s infinite;
+}
+
+.ledContainer{
+    display: flex;
+    justify-content: space-around;
 }
 
 .navbar {
@@ -234,6 +238,7 @@ html {
     grid-area: 3 / 5 / 5 / 6;
     margin-right: 5px;
     margin-bottom: 5px;
+    height: 98.3%;
 }
 
 .b:hover {
@@ -725,12 +730,4 @@ form {
         overflow-x: hidden;
     }
 
-}
-
-
-
-@media screen and (min-device-width : 1000px) {
-    .inicio-container p {
-        font-size: 1.5rem;
-    }
 }
