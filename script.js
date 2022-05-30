@@ -71,3 +71,29 @@ $("#paqueteEcomerce").click(function (e) {
     window.location.replace("#contacto");
 });
 
+
+let textChange = document.querySelector(".textChange");
+
+setTimeout(function(){
+    textChange.innerHTML = "Diseñá";
+}, 2000);
+
+setTimeout(function(){
+    textChange.innerHTML = "";
+}, 2500);
+
+setTimeout(function(){
+    textChange.innerHTML = "Renová";
+}, 3000);
+
+setTimeout(function(){
+    textChange.innerHTML = "";
+}, 3500);
+
+setTimeout(function(){
+    textChange.innerHTML = "Mejorá";
+}, 4000);
+
+setTimeout(function(){
+    textChange.innerHTML = " Mejorá tu página web";
+}, 4500);
