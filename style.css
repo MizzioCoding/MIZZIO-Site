@@ -747,4 +747,8 @@ form {
         overflow-x: hidden;
     }
 
+    .inicio-container p{
+        font-size: 1.5rem;
+    }
+
 }
