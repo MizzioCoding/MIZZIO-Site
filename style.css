@@ -777,4 +777,27 @@ form {
         font-size: 1rem;
     }
 
+    .card{
+        width: 400px;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    .card ul{
+        font-size: 1rem;
+    }
+
+    .cardbanner1{
+        width: 400px;
+    }
+
+    .cardbanner2{
+        width: 400px;
+    }
+
+    .cardbanner3{
+        width: 400px;
+    }
+
 }
