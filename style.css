@@ -46,7 +46,7 @@ html {
     letter-spacing: 8px;
 }
 
-.ledContainer{
+.ledContainer {
     display: flex;
     justify-content: space-around;
 }
@@ -119,10 +119,8 @@ html {
 }
 
 
-@keyframes led{
-    0%{
-        
-    }
+@keyframes led {
+    0% {}
 
     100% {
         text-shadow: rgb(0, 0, 0) 0 0 10px;
@@ -343,10 +341,10 @@ html {
     background-color: #fff;
 }
 
-.card{
+.card {
     background: #000000;
     width: 500px;
-    height: 600px;
+    height: 800px;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -357,12 +355,10 @@ html {
     margin-bottom: 30px;
 }
 
-.cardbanner1{
-    background-image: -webkit-linear-gradient(
-        top,
-        rgba(228, 228, 228, 0.562),
-        rgba(29, 29, 29, 0.897)
-      ),url("img/onepage.png");
+.cardbanner1 {
+    background-image: -webkit-linear-gradient(top,
+            rgba(228, 228, 228, 0.562),
+            rgba(29, 29, 29, 0.897)), url("img/onepage.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -370,7 +366,7 @@ html {
     height: 150px;
 }
 
-.cardbanner1 h1{
+.cardbanner1 h1 {
     color: rgb(255, 255, 255);
     text-shadow: #000 0px 0px 10px;
     font-size: 2.3rem;
@@ -379,12 +375,10 @@ html {
     margin-top: 50px;
 }
 
-.cardbanner2{
-    background-image:  -webkit-linear-gradient(
-        top,
-        rgba(228, 228, 228, 0.562),
-        rgba(29, 29, 29, 0.897)
-      ),url("img/avanzado.png");
+.cardbanner2 {
+    background-image: -webkit-linear-gradient(top,
+            rgba(228, 228, 228, 0.562),
+            rgba(29, 29, 29, 0.897)), url("img/avanzado.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -392,7 +386,7 @@ html {
     height: 150px;
 }
 
-.cardbanner2 h1{
+.cardbanner2 h1 {
     color: rgb(255, 255, 255);
     text-shadow: #000 0px 0px 10px;
     font-size: 2.3rem;
@@ -402,12 +396,10 @@ html {
 }
 
 
-.cardbanner3{
-    background-image: -webkit-linear-gradient(
-        top,
-        rgba(255, 255, 255, 0.562),
-        rgba(29, 29, 29, 0.897)
-      ) ,url("img/commerce.png");
+.cardbanner3 {
+    background-image: -webkit-linear-gradient(top,
+            rgba(255, 255, 255, 0.562),
+            rgba(29, 29, 29, 0.897)), url("img/commerce.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -415,7 +407,7 @@ html {
     height: 150px;
 }
 
-.cardbanner3 h1{
+.cardbanner3 h1 {
     color: rgb(255, 255, 255);
     text-shadow: #000 0px 0px 10px;
     font-size: 2.3rem;
@@ -431,10 +423,13 @@ html {
     font-size: 1.2rem;
     line-height: 30px;
     text-align: top;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .card ul li::before {
     content: '✓';
+    text-shadow: #fff 0px 0px 10px;
+    margin-right: 10px;
 }
 
 
@@ -450,6 +445,18 @@ html {
     align-items: center;
 }
 
+.cardContainer h2{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.items{
+display: inline-block;
+vertical-align: top;
+}
 
 #contacto {
     background-color: black;
@@ -470,6 +477,25 @@ textarea {
     font-size: 1.2rem;
     font-family: 'Fira Sans', sans-serif;
 }
+
+
+
+textarea:hover {
+    box-shadow: #fff 0px 0px 10px;
+}
+
+input[type=text]:hover {
+    box-shadow: #fff 0px 0px 10px
+}
+
+input[type=email]:hover {
+    box-shadow: #fff 0px 0px 10px
+}
+
+select:hover {
+    box-shadow: #fff 0px 0px 10px
+}
+
 
 input[type=submit] {
     text-align: center;
@@ -747,7 +773,7 @@ form {
         overflow-x: hidden;
     }
 
-    .inicio-container p{
+    .inicio-container p {
         font-size: 1rem;
     }
 
