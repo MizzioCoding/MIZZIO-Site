@@ -345,9 +345,10 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    background-color: #fff;
 }
 
-@property --rotate {
+/* @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
@@ -373,27 +374,7 @@ html {
     margin-top: 50px;
 }
 
-.card h1 {
-    color: #fff;
-    font-size: 2.3rem;
-}
 
-.card ul {
-    list-style: none;
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 30px;
-}
-
-.card ul li::before {
-    content: '✓';
-}
-
-
-.card:hover {
-    color: rgb(0, 0, 0);
-    transition: color 1s;
-}
 
 
 .card::before {
@@ -425,6 +406,44 @@ html {
     opacity: 1;
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
+} */
+
+.card{
+    background: #141414;
+    width: 500px;
+    height: 600px;
+    padding: 3px;
+    padding-top: 20px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    color: rgb(88 199 250 / 0%);
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.card h1 {
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+.card ul {
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.card ul li::before {
+    content: '✓';
+}
+
+
+.card:hover {
+    color: rgb(0, 0, 0);
+    transition: color 1s;
 }
 
 .cardContainer {
@@ -731,3 +750,14 @@ form {
     }
 
 }
+<<<<<<< Updated upstream
+=======
+
+
+
+@media screen and (min-device-width : 1000px) {
+    .inicio-container p {
+        font-size: 3rem;
+    }
+}
+>>>>>>> Stashed changes
