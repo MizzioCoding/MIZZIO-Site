@@ -34,20 +34,16 @@ html {
 }
 
 .inicio-container p {
-    /* width: 0;
-    overflow: hidden; */
     white-space: nowrap;
     font-size: 2rem;
     margin: auto;
     margin-top: -40vh;
     position: absolute;
     text-align: center;
-    font-family: "Courier New";
-    /* border-right: 0.15em solid #ffffff; */
     color: #fff;
-    /* animation: typing 4s steps(38) 2s 1 normal both, blink 1s steps(1) infinite;
-    animation-delay: 2s; */
+    font-family: 'Fira Sans', sans-serif;
     animation: led 1s infinite;
+    letter-spacing: 8px;
 }
 
 .ledContainer{
@@ -348,72 +344,10 @@ html {
     background-color: #fff;
 }
 
-/* @property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-}
-
-:root {
-    --card-height: 65vh;
-    --card-width: calc(var(--card-height) / 1.5);
-}
-
-
-.card {
-    background: #141414;
-    width: var(--card-width);
-    height: var(--card-height);
-    padding: 3px;
-    position: relative;
-    border-radius: 6px;
-    justify-content: center;
-    text-align: left;
-    display: flex;
-    color: rgb(88 199 250 / 0%);
-    margin-top: 50px;
-}
-
-
-
-
-.card::before {
-    content: "";
-    width: 104%;
-    height: 102%;
-    border-radius: 8px;
-    background-image: linear-gradient(var(--rotate), #ffffff, #3b3b3b 43%, #000000);
-    position: absolute;
-    top: -1%;
-    left: -2%;
-    z-index: -1;
-    animation: spin 2.5s linear infinite;
-}
-
-.card::after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(var(--rotate), #ffffff, #3b3b3b 43%, #000000);
-    opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-} */
-
 .card{
-    background: #141414;
+    background: #000000;
     width: 500px;
     height: 600px;
-    padding: 3px;
-    padding-top: 20px;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -424,16 +358,80 @@ html {
     margin-bottom: 30px;
 }
 
-.card h1 {
-    color: #fff;
-    font-size: 2.3rem;
+.cardbanner1{
+    background-image: -webkit-linear-gradient(
+        top,
+        rgba(228, 228, 228, 0.562),
+        rgba(29, 29, 29, 0.897)
+      ),url("img/onepage.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 150px;
 }
+
+.cardbanner1 h1{
+    color: rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 10px;
+    font-size: 2.3rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cardbanner2{
+    background-image:  -webkit-linear-gradient(
+        top,
+        rgba(228, 228, 228, 0.562),
+        rgba(29, 29, 29, 0.897)
+      ),url("img/avanzado.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 150px;
+}
+
+.cardbanner2 h1{
+    color: rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 10px;
+    font-size: 2.3rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.cardbanner3{
+    background-image: -webkit-linear-gradient(
+        top,
+        rgba(255, 255, 255, 0.562),
+        rgba(29, 29, 29, 0.897)
+      ) ,url("img/commerce.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 150px;
+}
+
+.cardbanner3 h1{
+    color: rgb(255, 255, 255);
+    text-shadow: #000 0px 0px 10px;
+    font-size: 2.3rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
 
 .card ul {
     list-style: none;
     color: #fff;
     font-size: 1.2rem;
     line-height: 30px;
+    text-align: top;
 }
 
 .card ul li::before {
@@ -452,6 +450,7 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
 
 #contacto {
     background-color: black;
@@ -750,14 +749,3 @@ form {
     }
 
 }
-<<<<<<< Updated upstream
-=======
-
-
-
-@media screen and (min-device-width : 1000px) {
-    .inicio-container p {
-        font-size: 3rem;
-    }
-}
->>>>>>> Stashed changes
