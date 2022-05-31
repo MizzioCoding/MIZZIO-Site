@@ -735,8 +735,31 @@ form {
 
     }
 
+    .logonav{
+        padding-top: 1%;
+    }
+
+    .toggle-button{
+        padding-top: 2%;
+    }
+
     .navbarHeight {
         animation: navAnimation .2s ease 0s 1 normal forwards;
+    }
+
+    .nosotros-text{
+        padding: 0px;
+        padding-left: 10px;
+    }
+    
+    .nosotros-text h1{
+        padding-top: 10px;
+    }
+    
+    .nosotros-container{
+        padding: 0px;
+        margin-bottom: 150px;
+        height: 100%;
     }
 
     .componentContainer {
@@ -757,7 +780,6 @@ form {
     .a {
         grid-area: a;
         background-color: black;
-        height: auto;
         overflow: hidden;
         width: 100vw;
     }
@@ -778,6 +800,13 @@ form {
         width: 100vw;
     }
 
+    .met5 {
+        display: none;
+    }
+    
+    .met6 {
+        display: none;
+    }
 
     .paquetes-container {
         overflow-x: hidden;
@@ -796,6 +825,11 @@ form {
 
     .card ul{
         font-size: 1rem;
+    }
+
+    .cardContainer{
+        width: 95vw;
+        overflow: hidden;
     }
 
     .cardbanner1{
