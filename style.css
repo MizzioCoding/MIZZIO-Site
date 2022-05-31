@@ -344,7 +344,7 @@ html {
 .card {
     background: #000000;
     width: 500px;
-    height: 800px;
+    height: 750px;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -453,10 +453,20 @@ html {
     letter-spacing: 8px;
 }
 
+
 .items{
-display: inline-block;
-vertical-align: top;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 500px;
 }
+
+.item1 { grid-area: 1 / 1 / 2 / 2; 
+align-self: center;
+}
+.item2 { grid-area: 2 / 1 / 5 / 2; }
 
 #contacto {
     background-color: black;
