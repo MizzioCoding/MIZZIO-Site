@@ -756,6 +756,10 @@ form {
         padding-top: 10px;
     }
     
+    .nosotros-text p {
+        font-size: 85%;
+    }
+
     .nosotros-container{
         padding: 0px;
         margin-bottom: 150px;
