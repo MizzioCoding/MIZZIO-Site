@@ -338,7 +338,11 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-image: url("img/backPacks.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .card {
