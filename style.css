@@ -570,6 +570,16 @@ form {
     font-size: 2.5rem;
 }
 
+@keyframes navAnimation {
+	0% {
+		height:100px ;
+	}
+
+	100% {
+		height:300px ;
+	}
+}
+
 @keyframes spin {
     0% {
         --rotate: 0deg;

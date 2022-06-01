@@ -48,7 +48,10 @@ const navbar = document.getElementsByClassName('navbar')[0];
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active');
     navbar.classList.toggle('navbarHeight');
-
+    if ($(window).scrollTop() <= 50) {
+        $('.navbar').addClass('solid');
+        $('.navbar').removeClass('unsolid');
+    }
 });
 
 navbarLinks.addEventListener('click', () => {
