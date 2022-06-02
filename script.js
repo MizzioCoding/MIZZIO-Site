@@ -109,5 +109,9 @@ setTimeout(function () {
 }, 4000);
 
 setTimeout(function () {
-    textChange.innerHTML = " Mejorá tu página web";
+    textChange.innerHTML = "";
 }, 4500);
+
+setTimeout(function () {
+    textChange.innerHTML = "Crea tu página web";
+}, 5000);
