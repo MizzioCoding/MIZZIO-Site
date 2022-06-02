@@ -113,5 +113,5 @@ setTimeout(function () {
 }, 4500);
 
 setTimeout(function () {
-    textChange.innerHTML = "Crea tu página web";
+    textChange.innerHTML = "Creá tu página web";
 }, 5000);
