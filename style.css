@@ -580,6 +580,18 @@ form {
     letter-spacing: 10px;
 }
 
+.portfolio-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.phone{
+    margin-top: 80px;
+}
+
+
 @keyframes navAnimation {
     0% {
         height: 100px;
