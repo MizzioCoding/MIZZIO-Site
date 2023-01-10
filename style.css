@@ -1,6 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    transition: 0.8s;
 }
 
 html {
@@ -580,15 +581,67 @@ form {
     letter-spacing: 10px;
 }
 
-.portfolio-container {
+.porfolio-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-direction: column;
     background-color: #fff;
+    width: 100%;
 }
 
-.phone{
-    margin-top: 80px;
+.porfolio-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+
+.porfolio-img{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    object-fit: cover;
+}
+
+.item-description{
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.item-description h3{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.item-description p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.item-description a{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 209, 2);
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+
+.item-description a:hover{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .float{
