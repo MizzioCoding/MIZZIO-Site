@@ -123,18 +123,23 @@ let mybutton = document.getElementById("wppIcon");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-  scrollFunction();
+    scrollFunction();
 };
 
 $("#wppIcon").hide();
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
 }
+
+let reloadCache = getElementById("reloadCache");
+reloadCache.addEventListener("click", function () {
+    window.location.reload(true);
+});
