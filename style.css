@@ -47,6 +47,64 @@ html {
     letter-spacing: 8px;
 }
 
+.confiaron-container p{
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: auto;
+    margin-top: -40vh;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 6px;
+    animation: typing 1s linear;
+    text-shadow: rgb(255, 196, 0) 0 0 5px;
+}
+
+.confiaron-container img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.confiaron-container video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+
+.typewriter p {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
 .ledContainer {
     display: flex;
     justify-content: space-around;
@@ -98,26 +156,6 @@ html {
     margin-top: -40px;
 }
 
-
-
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 40%;
-    }
-}
-
-@keyframes blink {
-    0% {}
-
-    50% {
-        border-color: transparent;
-    }
-}
 
 
 @keyframes led {
@@ -628,24 +666,6 @@ form {
     margin: 20px;
 }
 
-.item-description a {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1rem;
-    margin: 20px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: rgb(255, 209, 2);
-    width: 100px;
-    padding: 8px;
-    font-weight: bold;
-    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
-}
-
-.item-description a:hover {
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
 .float {
     position: fixed;
     width: 60px;
@@ -978,6 +998,15 @@ form {
         font-size: 1rem;
     }
 
+    .confiaron-container p {
+        font-size: 1rem;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 80% }
+      }
+
     .card {
         width: 400px;
         margin-right: 20px;
@@ -1050,3 +1079,180 @@ form {
         height: 300px;
     }
 }
+
+/* Boton ver sitio*/
+
+.btn-22 {
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.8rem;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+    border-radius: 0px;
+    background: transparent;
+    overflow: hidden;
+    border: none;
+    margin-left: 20px;
+  }
+  
+  .btn-22:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(255, 209, 2));
+    animation: btn-22-right 2s linear infinite;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn-22:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgb(255, 209, 2));
+    animation: btn-22-bottom 2s linear infinite;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+  }
+  
+  .btn-22 span {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 210, 18, 0.87);
+    color: rgb(41, 41, 41);
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .btn-22 span:hover {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+  }
+  
+  .btn-22 span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgb(255, 209, 2));
+    animation: btn-22-left 2s linear infinite;
+  }
+  
+  .btn-22 span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgb(255, 209, 2));
+    animation: btn-22-top 2s linear infinite;
+    animation-delay: 1s;
+    transform: translateY(-100%);
+  }
+
+  .btn-22:hover{
+    color: rgb(255, 209, 2);
+  }
+  
+  .btn-22:hover:before {
+    background: linear-gradient(to right, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22:hover:after {
+    background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22 span:hover:before {
+    background: linear-gradient(to top, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22 span:hover:after {
+    background: linear-gradient(to left, transparent, rgb(255, 255, 255));
+  }
+  
+  
+  .btn-22:active:before {
+    background: linear-gradient(to right, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22:active:after {
+    background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22 span:active:before {
+    background: linear-gradient(to top, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22 span:active:after {
+    background: linear-gradient(to left, transparent, rgb(255, 255, 255));
+  }
+  
+  .btn-22:active {
+    color: rgb(255, 209, 2);
+  }
+  
+  @keyframes btn-22-right {
+    0% {
+       transform: translateX(-100%);
+    }
+  
+    100% {
+       transform: translateX(100%);
+    }
+  
+  }
+  
+  @keyframes btn-22-top {
+    0% {
+       transform: translateY(100%);
+    }
+  
+    100% {
+       transform: translateY(-100%);
+    }
+  
+  }
+  
+  @keyframes btn-22-left {
+    0% {
+       transform: translateX(100%);
+    }
+  
+    100% {
+       transform: translateX(-100%);
+    }
+  
+  }
+  
+  @keyframes btn-22-bottom {
+    0% {
+       transform: translateY(-100%);
+    }
+  
+    100% {
+       transform: translateY(100%);
+    }
+  
+  }
+  
+  .btn-22:focus {
+    outline: none
+  }
+
+  /* Finaliza boton ver sitio*/
