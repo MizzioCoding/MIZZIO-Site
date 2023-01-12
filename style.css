@@ -1061,19 +1061,6 @@ form {
         margin: 20px;
     }
 
-    .item-description a {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 0.8rem;
-        margin: 20px;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        background-color: rgb(255, 209, 2);
-        width: 100px;
-        padding: 8px;
-        font-weight: bold;
-        text-shadow: rgb(255, 255, 255) 0px 0px 10px;
-    }
-
     .mobile {
         width: 50%;
         height: 300px;
