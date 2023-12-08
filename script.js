@@ -139,12 +139,6 @@ function scrollFunction() {
     }
 }
 
-let reloadCache = getElementById("reloadCache");
-reloadCache.addEventListener("click", function () {
-    window.location.reload(true);
-});
-
-
 var basicTimeline = anime.timeline({
     autoplay: false
 });
@@ -205,3 +199,35 @@ $(".button").click(function () {
 $(".text").click(function () {
     basicTimeline.play();
 });
+
+let breadActive = "";
+
+function observer(targetId, idElemento) {
+
+    const texto = document.getElementById(targetId);
+    const callback = (entradas, opciones) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+
+            console.log(entrada.target.id);
+          if (breadActive !== "") {
+            $("#" + breadActive).removeClass("moveToUp");
+          }
+          breadActive = idElemento;
+          $("#" + idElemento).addClass("moveToUp");
+        }
+  
+      });
+  
+    }
+    const opciones = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px 0px 0px 0px",
+      threshold: 0.2
+  
+    });
+    opciones.observe(texto);
+  }
+  
+  observer("viewPorfolio", "siro-item")
+  observer("viewPorfolio", "donPepe-item")

@@ -671,6 +671,7 @@ form {
     display: flex;
     flex-direction: column;
     object-fit: contain;
+    width: 500px;
 }
 
 .item-description h3 {
@@ -1260,6 +1261,15 @@ form {
         transform: translateY(100%);
     }
 
+}
+
+@keyframes mover {
+    0% { transform: translateY(5000px); }
+    100% { transform: translateY(0px); }
+}
+
+.moveToUp{
+    animation: mover 0.8s ease-in-out;
 }
 
 .btn-22:focus {
